@@ -1,5 +1,4 @@
-// const React=require("react");
-
+const React = require("react");
 /*Entry(object data)
   data:{
     img
@@ -7,6 +6,8 @@
     description
     github
   }*/
+
+
 class Entry extends React.Component {
   render() {
     return React.createElement("div", {
@@ -18,4 +19,6 @@ class Entry extends React.Component {
     }, "view github"));
   }
 
-} // module.exports=Entry;
+}
+
+module.exports = Entry;
