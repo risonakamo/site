@@ -1,4 +1,8 @@
-const React=require("react");
+if (typeof module!="undefined")
+{
+  const React=require("react");
+  module.exports=Entry;
+}
 
 /*Entry(object data)
   data:{
@@ -21,5 +25,3 @@ class Entry extends React.Component
     );
   }
 }
-
-module.exports=Entry;
