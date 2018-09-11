@@ -30,6 +30,7 @@ class EntryTop extends React.Component
     title
     description
     github
+    imgtags: array of type tags that correspond to images in tagicons dir
   }*/
 class Entry extends React.Component
 {
@@ -49,10 +50,22 @@ class Entry extends React.Component
       githubData.textIndex=1;
     }
 
+    if (!this.props.data.imgtags)
+    {
+      this.props.data.imgtags=[];
+    }
+
     return (
       <div className="entry">
         <img src={this.props.data.img}/>
-        <h2>{this.props.data.title}</h2>
+        <h2>
+          {this.props.data.title}
+          <span>
+            {this.props.data.imgtags.map((x,i)=>{
+              return <img src={`tagicons/${x}.png`} key={i} title={x}/>
+            })}
+          </span>
+        </h2>
         <p>{this.props.data.description}</p>
         <a className={githubData.class} href={githubData.href}>{githubData.text[githubData.textIndex]}</a>
       </div>
