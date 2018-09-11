@@ -1,7 +1,27 @@
-if (typeof module!="undefined")
+//EntryTop(object data)
+//data: array of arrays of data. will randomise each array before pushing them all.
+class EntryTop extends React.Component
 {
-  const React=require("react");
-  module.exports=Entry;
+  constructor(props)
+  {
+    super(props);
+
+    this.flattenedData=[];
+    for (var x=0,l=this.props.data.length;x<l;x++)
+    {
+      randomiseArray(this.props.data[x]);
+      this.flattenedData.push(...this.props.data[x]);
+    }
+  }
+
+  render()
+  {
+    return (<>
+      {this.flattenedData.map((x,i)=>{
+        return <Entry data={x} key={i}/>
+      })}
+    </>);
+  }
 }
 
 /*Entry(object data)

@@ -3,11 +3,7 @@ window.onload=main;
 function main()
 {
     getData("entrydata.json",(data)=>{
-        ReactDOM.render(React.createElement(React.Fragment,null,
-            data.map((x,i)=>{
-                return React.createElement(Entry,{key:i,data:x});
-            })
-        ),document.querySelector(".entry-holder"));
+        ReactDOM.render(React.createElement(EntryTop,{data}),document.querySelector(".entry-holder"));
     });
 }
 
@@ -24,4 +20,23 @@ function getData(file,callback)
     };
 
     r.send();
+}
+
+//shuffle array in place
+function randomiseArray(array)
+{
+    var t;
+    var ri;
+    for (var x=array.length-1;x>0;x--)
+    {
+        ri=randint(0,x);
+        t=array[x];
+        array[x]=array[ri];
+        array[ri]=t;
+    }
+}
+
+function randint(min,max)
+{
+    return Math.floor(Math.random()*(max-min+1))+min;
 }

@@ -1,7 +1,25 @@
-if (typeof module != "undefined") {
-  const React = require("react");
+//EntryTop(object data)
+//data: array of arrays of data. will randomise each array before pushing them all.
+class EntryTop extends React.Component {
+  constructor(props) {
+    super(props);
+    this.flattenedData = [];
 
-  module.exports = Entry;
+    for (var x = 0, l = this.props.data.length; x < l; x++) {
+      randomiseArray(this.props.data[x]);
+      this.flattenedData.push(...this.props.data[x]);
+    }
+  }
+
+  render() {
+    return React.createElement(React.Fragment, null, this.flattenedData.map((x, i) => {
+      return React.createElement(Entry, {
+        data: x,
+        key: i
+      });
+    }));
+  }
+
 }
 /*Entry(object data)
   data:{
