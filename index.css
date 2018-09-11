@@ -20,6 +20,7 @@ a {
   max-width: 1300px;
   min-height: 500px;
   background-color: white;
+  border-radius: 5px;
 }
 .entry-holder {
   width: 1020px;
