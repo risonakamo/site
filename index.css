@@ -60,6 +60,12 @@ a {
   border-radius: 3px;
   transition: background-color 0.2s;
 }
+.entry a.unavailable {
+  color: #d4d4d4;
+}
+.entry a.unavailable:hover {
+  background-color: transparent;
+}
 .entry a:hover {
   background-color: rgba(166, 255, 204, 0.4);
 }
