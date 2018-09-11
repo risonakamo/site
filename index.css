@@ -2,13 +2,16 @@
 body {
   margin: 0;
   background-color: #05182b;
-  color: #212121;
+  color: #1b1b1b;
   font-family: "Roboto";
   font-size: 0;
 }
 h2,
 p {
   margin: 0;
+}
+a {
+  text-decoration: none;
 }
 .content-holder {
   display: flex;
@@ -43,11 +46,19 @@ p {
   font-size: 14px;
   margin-top: 16px;
   color: #757575;
+  line-height: 1.75;
 }
 .entry a {
   display: inline-block;
   font-family: "roboto slab";
   font-size: 14px;
   margin-top: 16px;
+  margin: 16px 0 0 -6px;
   color: #6ed59a;
+  padding: 6px 8px 7px 8px;
+  border-radius: 3px;
+  transition: background-color 0.2s;
+}
+.entry a:hover {
+  background-color: rgba(166, 255, 204, 0.4);
 }
