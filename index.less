@@ -121,3 +121,37 @@ a
         }
     }
 }
+
+.spinny
+{
+    height: 30px;
+    vertical-align: middle;
+    margin-left: 10px;
+    animation: spin 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) forwards,fade .5s 1s forwards;
+}
+
+@keyframes spin
+{
+    from
+    {
+        transform: rotate(0);
+    }
+
+    to
+    {
+        transform: rotate(400deg);
+    }
+}
+
+@keyframes fade
+{
+    from
+    {
+        opacity: 1;
+    }
+
+    to
+    {
+        opacity: 0;
+    }
+}
