@@ -3,12 +3,14 @@
 @main-light-colour: #6ed59a;
 @main-transparent-background: rgba(166, 255, 204, 0.4); //for hover backgrounds
 
+@secondary-light-colour: #2b8ef3;
+
 @faded-p-colour: #757575;
 
 body
 {
     margin: 0;
-    background-color: #05182b;
+    background-color: #171d1e;
     color: #1b1b1b;
     font-family: "Roboto";
     font-size: 0;
@@ -56,6 +58,29 @@ a
 .top-box
 {
     padding-bottom: 0;
+
+    &.expanded
+    {
+        padding-bottom: 70px;
+
+        .resume-bar
+        {
+            display: block;
+        }
+
+        .seperator
+        {
+            .show-label
+            {
+                opacity: 1;
+            }
+
+            .button-cross
+            {
+                transform: rotate(45deg);
+            }
+        }
+    }
 }
 
 //title bar
@@ -155,6 +180,8 @@ a
 //resume information section
 .resume-bar
 {
+    display: none;
+
     .resume-entry
     {
         margin: 15px 0 15px 0;
@@ -176,6 +203,11 @@ a
                 .p-shared();
                 color: @faded-p-colour;
             }
+
+            .highlight
+            {
+                color: @secondary-light-colour;
+            }
         }
     }
 }
@@ -188,6 +220,7 @@ a
     margin-top: 55px;
     transition: background-color .2s;
     cursor: pointer;
+    user-select: none;
 
     .button
     {
@@ -200,9 +233,10 @@ a
         margin-top: -27px;
         transition: transform .2s,background-color .2s;
 
-        img
+        .button-cross
         {
-            padding-top: 8px;
+            transition: transform .2s;
+            margin-top: 8px;
         }
     }
 

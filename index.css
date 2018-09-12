@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body {
   margin: 0;
-  background-color: #05182b;
+  background-color: #171d1e;
   color: #1b1b1b;
   font-family: "Roboto";
   font-size: 0;
@@ -33,6 +33,18 @@ a {
 /*-- top box stuff --*/
 .top-box {
   padding-bottom: 0;
+}
+.top-box.expanded {
+  padding-bottom: 70px;
+}
+.top-box.expanded .resume-bar {
+  display: block;
+}
+.top-box.expanded .seperator .show-label {
+  opacity: 1;
+}
+.top-box.expanded .seperator .button-cross {
+  transform: rotate(45deg);
 }
 .title-bar {
   text-align: center;
@@ -92,6 +104,9 @@ a {
   line-height: 2.3;
   box-sizing: content-box;
 }
+.resume-bar {
+  display: none;
+}
 .resume-bar .resume-entry {
   margin: 15px 0 15px 0;
 }
@@ -116,12 +131,16 @@ a {
   line-height: 1.75;
   color: #757575;
 }
+.resume-bar .resume-entry .entry-info .highlight {
+  color: #2b8ef3;
+}
 .seperator {
   height: 100px;
   border-top: 1px dashed #757575;
   margin-top: 55px;
   transition: background-color 0.2s;
   cursor: pointer;
+  user-select: none;
 }
 .seperator .button {
   width: 50px;
@@ -133,8 +152,9 @@ a {
   margin-top: -27px;
   transition: transform 0.2s, background-color 0.2s;
 }
-.seperator .button img {
-  padding-top: 8px;
+.seperator .button .button-cross {
+  transition: transform 0.2s;
+  margin-top: 8px;
 }
 .seperator .show-label {
   font-size: 16px;

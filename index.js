@@ -5,6 +5,8 @@ function main()
     getData("entrydata.json",(data)=>{
         ReactDOM.render(React.createElement(EntryTop,{data}),document.querySelector(".entry-holder"));
     });
+
+    toggleResume();
 }
 
 function getData(file,callback)
@@ -39,4 +41,18 @@ function randomiseArray(array)
 function randint(min,max)
 {
     return Math.floor(Math.random()*(max-min+1))+min;
+}
+
+function toggleResume()
+{
+    var topbox=document.querySelector(".top-box");
+    var seperatorText=document.querySelector(".show-label");
+    var seperatorTextStrings=["Show Resume Information","Hide Resume Information"];
+    var seperatorTextIndex=0;
+    document.querySelector(".seperator").addEventListener("click",(e)=>{
+        topbox.classList.toggle("expanded");
+
+        seperatorTextIndex=seperatorTextIndex?0:1;
+        seperatorText.innerText=seperatorTextStrings[seperatorTextIndex];
+    });
 }
