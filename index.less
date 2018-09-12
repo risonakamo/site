@@ -163,9 +163,15 @@ a
             color:  white;
             font-size: 16px;
             border-radius: 6px;
-            padding: 7px 24px 11px 24px;
+            padding: 7px 20px 7px 24px;
             margin-top: 20px;
             transition: background-color .2s;
+
+            img
+            {
+                height: 22px;
+                vertical-align: top;
+            }
 
             &:hover
             {
@@ -408,5 +414,23 @@ a
     to
     {
         opacity: 0;
+    }
+}
+
+footer
+{
+    background-color: black;
+
+    p
+    {
+        .p-shared();
+        color: white;
+        text-align: center;
+        padding: 20px 0 20px 0;
+    }
+
+    a
+    {
+        color: @main-light-colour;
     }
 }
