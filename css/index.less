@@ -6,7 +6,7 @@
 @secondary-light-colour: #2b8ef3;
 @faded-p-colour: #757575;
 
-@small-screen: ~"max-width: 1230px";
+@small-screen: ~"max-width: 1230px"; //minimum screen size for mobile cutoff
 
 body
 {
@@ -150,6 +150,11 @@ a
 {
     margin-top: 25px;
 
+    @media (@small-screen)
+    {
+        min-height: 0;
+    }
+
     &>div
     {
         min-height: 100px;
@@ -158,10 +163,27 @@ a
 
     .links-box
     {
+        .top-box-div-splits.div-split-left();
         color: @main-light-colour;
         font-size: 19px;
         font-family: "roboto slab";
-        .top-box-div-splits.div-split-left();
+
+        @media (@small-screen)
+        {
+            display: block;
+            width: auto;
+            min-height: 0;
+            text-align: center;
+            padding-right: 0;
+        }
+
+        .email
+        {
+            @media (@small-screen)
+            {
+                display: block;
+            }
+        }
 
         .git-button
         {
@@ -173,6 +195,12 @@ a
             padding: 7px 20px 7px 24px;
             margin-top: 20px;
             transition: background-color .2s;
+
+            @media (@small-screen)
+            {
+                padding: 7px 50px 7px 56px;
+                margin: 10px 0 22px 0;
+            }
 
             img
             {
@@ -194,6 +222,13 @@ a
         width: 490px;
         line-height: 2.3;
         box-sizing: content-box;
+
+        @media (@small-screen)
+        {
+            display: block;
+            padding-left: 0;
+            margin: auto;
+        }
     }
 }
 
@@ -211,6 +246,11 @@ a
             .top-box-div-splits.div-split-left();
             font-size: 20px;
             font-weight: 400;
+
+            @media (@small-screen)
+            {
+                width: 40%;
+            }
         }
 
         .entry-info
@@ -270,6 +310,11 @@ a
         margin-top: 17px;
         opacity: 0;
         transition: opacity .2s;
+
+        @media (@small-screen)
+        {
+            opacity: 1;
+        }
     }
 
     &:hover
@@ -310,6 +355,15 @@ a
     vertical-align: top;
     margin: 30px 0 30px 0;
     animation: fade-slide-in 1s forwards;
+
+    @media (@small-screen)
+    {
+        display: block;
+        width: 90%;
+        margin: 30px auto 30px auto;
+        border-bottom: 1px dashed @faded-p-colour;
+        padding-bottom: 20px;
+    }
 
     &:nth-of-type(2n)
     {
@@ -365,6 +419,11 @@ a
         border-radius: 3px;
         transition: background-color .2s;
 
+        @media (@small-screen)
+        {
+            font-size: 19px;
+        }
+
         &.unavailable
         {
             color: #d4d4d4;
@@ -379,20 +438,6 @@ a
         {
             background-color: @main-transparent-background;
         }
-
-        @media (@small-screen)
-        {
-            font-size: 19px;
-        }
-    }
-
-    @media (@small-screen)
-    {
-        display: block;
-        width: 90%;
-        margin: 30px auto 30px auto;
-        border-bottom: 1px dashed @faded-p-colour;
-        padding-bottom: 20px;
     }
 }
 
