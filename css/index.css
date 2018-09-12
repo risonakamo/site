@@ -1,8 +1,5 @@
 @charset "UTF-8";
 body {
-  background-color: red;
-}
-body {
   margin: 0;
   background-color: #171d1e;
   color: #1b1b1b;
@@ -33,6 +30,12 @@ a {
   font-size: 34px;
   font-weight: 300;
   padding-bottom: 20px;
+}
+@media (max-width: 1230px) {
+  .content-holder h1 {
+    padding-left: 5%;
+    font-size: 30px;
+  }
 }
 /*-- top box stuff --*/
 .top-box {
@@ -193,6 +196,11 @@ a {
   width: 1020px;
   margin: auto;
 }
+@media (max-width: 1230px) {
+  .entry-holder {
+    width: 100%;
+  }
+}
 .entry {
   display: inline-block;
   width: 450px;
@@ -202,6 +210,11 @@ a {
 }
 .entry:nth-of-type(2n) {
   margin-left: 120px;
+}
+@media (max-width: 1230px) {
+  .entry:nth-of-type(2n) {
+    margin-left: auto;
+  }
 }
 .entry > img {
   width: 100%;
@@ -245,6 +258,20 @@ a {
 }
 .entry a:hover {
   background-color: rgba(166, 255, 204, 0.4);
+}
+@media (max-width: 1230px) {
+  .entry a {
+    font-size: 19px;
+  }
+}
+@media (max-width: 1230px) {
+  .entry {
+    display: block;
+    width: 90%;
+    margin: 30px auto 30px auto;
+    border-bottom: 1px dashed #757575;
+    padding-bottom: 20px;
+  }
 }
 @keyframes fade-slide-in {
   from {

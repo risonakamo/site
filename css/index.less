@@ -1,13 +1,12 @@
 @charset "UTF-8";
 
-@import "index-mobile";
-
 @main-light-colour: #6ed59a;
 @main-transparent-background: rgba(166, 255, 204, 0.4); //for hover backgrounds
 
 @secondary-light-colour: #2b8ef3;
-
 @faded-p-colour: #757575;
+
+@small-screen: ~"max-width: 1230px";
 
 body
 {
@@ -54,6 +53,12 @@ a
         font-size: 34px;
         font-weight: 300;
         padding-bottom: 20px;
+
+        @media (@small-screen)
+        {
+            padding-left: 5%;
+            font-size: 30px;
+        }
     }
 }
 
@@ -290,6 +295,11 @@ a
 {
     width: 1020px;
     margin: auto;
+
+    @media (@small-screen)
+    {
+        width: 100%;
+    }
 }
 
 //main entry element
@@ -304,6 +314,11 @@ a
     &:nth-of-type(2n)
     {
         margin-left: 120px;
+
+        @media (@small-screen)
+        {
+            margin-left: auto;
+        }
     }
 
     &>img
@@ -364,6 +379,20 @@ a
         {
             background-color: @main-transparent-background;
         }
+
+        @media (@small-screen)
+        {
+            font-size: 19px;
+        }
+    }
+
+    @media (@small-screen)
+    {
+        display: block;
+        width: 90%;
+        margin: 30px auto 30px auto;
+        border-bottom: 1px dashed @faded-p-colour;
+        padding-bottom: 20px;
     }
 }
 
