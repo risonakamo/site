@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @main-light-colour: #6ed59a;
+@faded-p-colour: #757575;
 
 body
 {
@@ -82,6 +83,7 @@ a
     }
 }
 
+//intro bar of top box
 .intro-bar
 {
     margin-top: 25px;
@@ -106,7 +108,7 @@ a
         .git-button
         {
             display: inline-block;
-            background-color: #6ed59a;
+            background-color: @main-light-colour;
             color:  white;
             font-size: 16px;
             border-radius: 6px;
@@ -121,6 +123,29 @@ a
         width: 490px;
         line-height: 2.3;
         padding-left: 40px;
+    }
+}
+
+//top box seperator element
+.seperator
+{
+    border-top: 1px dashed @faded-p-colour;
+    margin-top: 55px;
+
+    .button
+    {
+        width: 50px;
+        height: 50px;
+        background-color: @main-light-colour;
+        border-radius: 100%;
+        text-align: center;
+        margin: auto;
+        margin-top: -27px;
+
+        img
+        {
+            padding-top: 8px;
+        }
     }
 }
 
@@ -173,7 +198,7 @@ a
     {
         .p-shared();
         margin-top: 16px;
-        color: #757575;
+        color: @faded-p-colour;
     }
 
     a
