@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@main-light-colour: #6ed59a;
+
 body
 {
     margin: 0;
@@ -19,12 +21,18 @@ a
     text-decoration: none;
 }
 
+//for p-like things. small text with a slightly large line spacing.
+.p-shared()
+{
+    font-size: 14px;
+    line-height: 1.75;
+}
+
 //main outside wrap
 .content-holder
 {
     width: 90%;
     max-width: 1300px;
-    min-height: 500px;
     margin: 50px auto 100px auto;
     background-color: white;
     border-radius: 5px;
@@ -37,6 +45,82 @@ a
         font-size: 34px;
         font-weight: 300;
         padding-bottom: 20px;
+    }
+}
+
+/*-- top box stuff --*/
+
+//title bar
+.title-bar
+{
+    text-align: center;
+
+    h2
+    {
+        display: inline-block;
+        font-size: 45px;
+        font-weight: 300;
+    }
+
+    span
+    {
+        color: @main-light-colour;
+        font-size: 20px;
+        font-weight: 300;
+        padding: 0 10px 0 10px;
+        border-right: 1px solid @main-light-colour;
+
+        &:first-of-type
+        {
+            padding-left: 20px;
+        }
+
+        &:last-of-type
+        {
+            border-right: none;
+        }
+    }
+}
+
+.intro-bar
+{
+    margin-top: 25px;
+
+    &>div
+    {
+        display: inline-block;
+        width: 50%;
+        min-height: 100px;
+        vertical-align: top;
+    }
+
+    .links-box
+    {
+        color: @main-light-colour;
+        font-size: 20px;
+        font-family: "roboto slab";
+        text-align: right;
+        padding-right: 40px;
+        box-sizing: border-box;
+
+        .git-button
+        {
+            display: inline-block;
+            background-color: #6ed59a;
+            color:  white;
+            font-size: 16px;
+            border-radius: 6px;
+            padding: 7px 24px 11px 24px;
+            margin-top: 20px;
+        }
+    }
+
+    .text
+    {
+        .p-shared();
+        width: 490px;
+        line-height: 2.3;
+        padding-left: 40px;
     }
 }
 
@@ -87,10 +171,9 @@ a
 
     p
     {
-        font-size: 14px;
+        .p-shared();
         margin-top: 16px;
         color: #757575;
-        line-height: 1.75;
     }
 
     a
@@ -100,7 +183,7 @@ a
         font-size: 14px;
         margin-top: 16px;
         margin: 16px 0 0 -6px;
-        color: #6ed59a;
+        color: @main-light-colour;
         padding: 6px 8px 7px 8px;
         border-radius: 3px;
         transition: background-color .2s;

@@ -2,7 +2,7 @@
     [
         {
             "title":"AzLTables",
-            "description":"Gather information from the Azur Lane wiki and view all your collected information in one place, displayed in an easy-to-view format. Fleet management functions included.",
+            "description":"Gather information from the Azur Lane wiki and view all collected information in one place, displayed in an easy-to-view format. Fleet management functions included.",
             "img":"entryimg/azltable.png",
             "github":"https://github.com/risonakamo/azltables",
             "imgtags":["extension"]
