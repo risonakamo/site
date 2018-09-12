@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
 @main-light-colour: #6ed59a;
+@main-transparent-background: rgba(166, 255, 204, 0.4); //for hover backgrounds
+
 @faded-p-colour: #757575;
 
 body
@@ -38,6 +40,7 @@ a
     background-color: white;
     border-radius: 5px;
     padding: 70px 0 70px 0;
+    overflow: hidden;
 
     h1
     {
@@ -136,6 +139,8 @@ a
     height: 100px;
     border-top: 1px dashed @faded-p-colour;
     margin-top: 55px;
+    transition: background-color .2s;
+    cursor: pointer;
 
     .button
     {
@@ -146,10 +151,38 @@ a
         text-align: center;
         margin: auto;
         margin-top: -27px;
+        transition: transform .2s,background-color .2s;
 
         img
         {
             padding-top: 8px;
+        }
+    }
+
+    .show-label
+    {
+        font-size: 16px;
+        color: @main-light-colour;
+        font-family: "roboto slab";
+        text-align: center;
+        margin-top: 17px;
+        opacity: 0;
+        transition: opacity .2s;
+    }
+
+    &:hover
+    {
+        background-color: @main-transparent-background;
+
+        .show-label
+        {
+            opacity: 1;
+        }
+
+        .button
+        {
+            transform: translateY(-5px);
+            background-color: #84f7b5;
         }
     }
 }
@@ -230,7 +263,7 @@ a
 
         &:hover
         {
-            background-color: rgba(166, 255, 204, 0.4);
+            background-color: @main-transparent-background;
         }
     }
 }

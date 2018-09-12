@@ -21,6 +21,7 @@ a {
   background-color: white;
   border-radius: 5px;
   padding: 70px 0 70px 0;
+  overflow: hidden;
 }
 .content-holder h1 {
   width: 1020px;
@@ -91,6 +92,8 @@ a {
   height: 100px;
   border-top: 1px dashed #757575;
   margin-top: 55px;
+  transition: background-color 0.2s;
+  cursor: pointer;
 }
 .seperator .button {
   width: 50px;
@@ -100,9 +103,29 @@ a {
   text-align: center;
   margin: auto;
   margin-top: -27px;
+  transition: transform 0.2s, background-color 0.2s;
 }
 .seperator .button img {
   padding-top: 8px;
+}
+.seperator .show-label {
+  font-size: 16px;
+  color: #6ed59a;
+  font-family: "roboto slab";
+  text-align: center;
+  margin-top: 17px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.seperator:hover {
+  background-color: rgba(166, 255, 204, 0.4);
+}
+.seperator:hover .show-label {
+  opacity: 1;
+}
+.seperator:hover .button {
+  transform: translateY(-5px);
+  background-color: #84f7b5;
 }
 .entry-holder {
   width: 1020px;
