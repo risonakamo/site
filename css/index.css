@@ -1,5 +1,8 @@
 @charset "UTF-8";
 body {
+  background-color: red;
+}
+body {
   margin: 0;
   background-color: #171d1e;
   color: #1b1b1b;
