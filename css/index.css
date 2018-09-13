@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body {
   margin: 0;
-  background-color: #171d1e;
+  background-color: #060f17;
   color: #1b1b1b;
   font-family: "Roboto";
   font-size: 0;
@@ -17,7 +17,7 @@ a {
 .content-holder {
   width: 90%;
   max-width: 1300px;
-  margin: 50px auto 100px auto;
+  margin: 50px auto 60px auto;
   background-color: white;
   border-radius: 5px;
   padding: 70px 0 70px 0;
@@ -253,6 +253,7 @@ a {
   width: 450px;
   vertical-align: top;
   margin: 30px 0 30px 0;
+  opacity: 0;
   animation: fade-slide-in 1s forwards;
 }
 @media (max-width: 1230px) {
@@ -353,7 +354,7 @@ a {
   }
 }
 footer {
-  background-color: black;
+  background-color: #03080c;
 }
 footer p {
   font-size: 14px;
