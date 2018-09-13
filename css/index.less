@@ -103,22 +103,27 @@ a
         font-weight: 300;
     }
 
-    span
+    .title-tags
     {
-        color: @main-light-colour;
-        font-size: 20px;
-        font-weight: 300;
-        padding: 0 10px 0 10px;
-        border-right: 1px solid @main-light-colour;
+        display: inline-block;
 
-        &:first-of-type
+        span
         {
-            padding-left: 20px;
-        }
+            color: @main-light-colour;
+            font-size: 20px;
+            font-weight: 300;
+            padding: 0 10px 0 10px;
+            border-right: 1px solid @main-light-colour;
 
-        &:last-of-type
-        {
-            border-right: none;
+            &:first-of-type
+            {
+                padding-left: 20px;
+            }
+
+            &:last-of-type
+            {
+                border-right: none;
+            }
         }
     }
 }
@@ -219,15 +224,17 @@ a
     {
         .p-shared();
         .top-box-div-splits.div-split-right();
-        width: 490px;
+        max-width: 490px;
         line-height: 2.3;
         box-sizing: content-box;
 
         @media (@small-screen)
         {
             display: block;
-            padding-left: 0;
+            width: 100%;
             margin: auto;
+            padding: 0 20px 0px 20px;
+            box-sizing: border-box;
         }
     }
 }

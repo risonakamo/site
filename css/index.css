@@ -61,17 +61,20 @@ a {
   font-size: 45px;
   font-weight: 300;
 }
-.title-bar span {
+.title-bar .title-tags {
+  display: inline-block;
+}
+.title-bar .title-tags span {
   color: #6ed59a;
   font-size: 20px;
   font-weight: 300;
   padding: 0 10px 0 10px;
   border-right: 1px solid #6ed59a;
 }
-.title-bar span:first-of-type {
+.title-bar .title-tags span:first-of-type {
   padding-left: 20px;
 }
-.title-bar span:last-of-type {
+.title-bar .title-tags span:last-of-type {
   border-right: none;
 }
 .intro-bar {
@@ -140,15 +143,17 @@ a {
   width: 50%;
   padding-left: 40px;
   box-sizing: border-box;
-  width: 490px;
+  max-width: 490px;
   line-height: 2.3;
   box-sizing: content-box;
 }
 @media (max-width: 1230px) {
   .intro-bar .text {
     display: block;
-    padding-left: 0;
+    width: 100%;
     margin: auto;
+    padding: 0 20px 0px 20px;
+    box-sizing: border-box;
   }
 }
 .resume-bar {
