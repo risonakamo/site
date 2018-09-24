@@ -1,12 +1,14 @@
 @charset "UTF-8";
 
 @main-light-colour: #6ed59a;
+@main-light-strong: #00ca56; //stronger version for some on-white links
 @main-transparent-background: rgba(166, 255, 204, 0.4); //for hover backgrounds
 
 @secondary-light-colour: #2b8ef3;
 @faded-p-colour: #757575;
 
 @small-screen: ~"max-width: 1230px"; //minimum screen size for mobile cutoff
+@smaller-screen: ~"max-width: 1000px"; //special extra smaller screen size
 
 body
 {
@@ -59,6 +61,14 @@ a
             padding-left: 5%;
             font-size: 30px;
         }
+    }
+
+    //special transparent content holder version
+    &.transparent
+    {
+        background-color: transparent;
+        color: white;
+        box-shadow: none;
     }
 }
 
@@ -445,6 +455,50 @@ a
         &:hover
         {
             background-color: @main-transparent-background;
+        }
+    }
+}
+
+//bottom link box elements
+.clear-linkbox
+{
+    display: inline-block;
+    width: 450px;
+    background-color: rgba(255,255,255,.2);
+    color: white;
+    border-radius: 4px;
+    transition: background-color .2s, color .2s;
+
+    &:hover
+    {
+        background-color: white;
+        color: @main-light-strong;
+    }
+
+    img
+    {
+        width: 75px;
+        padding: 20px 30px 20px 30px;
+    }
+
+    .label
+    {
+        display: inline-block;
+        vertical-align: top;
+        line-height: 1.6;
+        padding-top: 27px;
+
+        h2
+        {
+            font-size: 19px;
+            font-weight: 400;
+        }
+
+        p
+        {
+            font-size: 16px;
+            font-weight: 300;
+            opacity: .6;
         }
     }
 }

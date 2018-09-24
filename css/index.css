@@ -37,6 +37,11 @@ a {
     font-size: 30px;
   }
 }
+.content-holder.transparent {
+  background-color: transparent;
+  color: white;
+  box-shadow: none;
+}
 /*-- top box stuff --*/
 .top-box {
   padding-bottom: 0;
@@ -320,6 +325,37 @@ a {
 }
 .entry a:hover {
   background-color: rgba(166, 255, 204, 0.4);
+}
+.clear-linkbox {
+  display: inline-block;
+  width: 450px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+}
+.clear-linkbox:hover {
+  background-color: white;
+  color: #00ca56;
+}
+.clear-linkbox img {
+  width: 75px;
+  padding: 20px 30px 20px 30px;
+}
+.clear-linkbox .label {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1.6;
+  padding-top: 27px;
+}
+.clear-linkbox .label h2 {
+  font-size: 19px;
+  font-weight: 400;
+}
+.clear-linkbox .label p {
+  font-size: 16px;
+  font-weight: 300;
+  opacity: 0.6;
 }
 @keyframes fade-slide-in {
   from {
