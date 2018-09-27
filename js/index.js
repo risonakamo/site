@@ -6,6 +6,8 @@ function main()
         ReactDOM.render(React.createElement(EntryTop,{data}),document.querySelector(".entry-holder"));
     });
 
+    ReactDOM.render(React.createElement(TheFooter),document.querySelector("footer"));
+
     toggleResume();
 }
 

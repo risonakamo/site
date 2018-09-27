@@ -555,20 +555,36 @@ a
     }
 }
 
+//the footer, of course
 footer
 {
     background-color: #03080c;
+    padding: 20px 0 20px 0;
+    text-align: center;
 
     p
     {
         .p-shared();
         color: white;
         text-align: center;
-        padding: 20px 0 20px 0;
     }
 
     a
     {
+        .p-shared();
         color: @main-light-colour;
+    }
+
+    .profile-img
+    {
+        height: 0;
+        opacity: 0;
+        margin: auto;
+        overflow: hidden;
+
+        img
+        {
+            width: 300px;
+        }
     }
 }
