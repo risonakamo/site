@@ -431,7 +431,7 @@ a
         font-family: "roboto slab";
         font-size: 14px;
         margin-top: 16px;
-        margin: 16px 0 0 -6px;
+        margin: 16px 0 0 3px;
         color: @main-light-colour;
         padding: 6px 8px 7px 8px;
         border-radius: 3px;
@@ -440,6 +440,11 @@ a
         @media (@small-screen)
         {
             font-size: 19px;
+        }
+
+        &:first-of-type
+        {
+            margin-left: -6px;
         }
 
         &.unavailable

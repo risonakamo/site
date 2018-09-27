@@ -29,7 +29,8 @@ class EntryTop extends React.Component
     img
     title
     description
-    github
+    github: give string "private" to denote private unavailable github
+    site?
     imgtags: array of type tags that correspond to images in tagicons dir
   }*/
 class Entry extends React.Component
@@ -68,6 +69,13 @@ class Entry extends React.Component
         </h2>
         <p>{this.props.data.description}</p>
         <a className={githubData.class} href={githubData.href}>{githubData.text[githubData.textIndex]}</a>
+        {(()=>{
+          //if there is a site link
+          if (this.props.data.site)
+          {
+            return <a className="sitelink" href={this.props.data.site}>visit this site</a>;
+          }
+        })()}
       </div>
     );
   }

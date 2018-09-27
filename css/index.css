@@ -306,7 +306,7 @@ a {
   font-family: "roboto slab";
   font-size: 14px;
   margin-top: 16px;
-  margin: 16px 0 0 -6px;
+  margin: 16px 0 0 3px;
   color: #6ed59a;
   padding: 6px 8px 7px 8px;
   border-radius: 3px;
@@ -316,6 +316,9 @@ a {
   .entry a {
     font-size: 19px;
   }
+}
+.entry a:first-of-type {
+  margin-left: -6px;
 }
 .entry a.unavailable {
   color: #d4d4d4;

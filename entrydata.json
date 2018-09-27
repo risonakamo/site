@@ -12,6 +12,7 @@
             "description":"A site for organising Azur Lane Equipment data. Perform sorts and mark your own equipment for faster reference and comparison.",
             "img":"entryimg/azlelist.png",
             "github":"https://github.com/risonakamo/azlelist",
+            "site":"https://risonakamo.github.io/azlelist/",
             "imgtags":["website","react","node"]
         },
         {
@@ -49,6 +50,7 @@
             "description":"Website for production of graphical Television Program Charts based on data from a user's Anilist account for any particular year and season.",
             "img":"entryimg/anigen.png",
             "github":"https://github.com/risonakamo/anigen",
+            "site":"https://risonakamo.github.io/anigen/",
             "imgtags":["website","graphql"]
         },
         {
@@ -63,6 +65,7 @@
             "description":"Makes a choice.",
             "img":"entryimg/choose.png",
             "github":"https://github.com/risonakamo/choose",
+            "site":"https://risonakamo.github.io/choose/",
             "imgtags":["website","react"]
         },
         {
@@ -93,6 +96,7 @@
             "description":"Mobile-intended website for opening many links in new tabs at once.",
             "img":"entryimg/imgurtab.png",
             "github":"https://github.com/risonakamo/imgurtabber",
+            "site":"https://risonakamo.github.io/imgurtabber/",
             "imgtags":["website"]
         },
         {
@@ -107,6 +111,7 @@
             "description":"A website that lets you [relatively] seamlessly switch between the sounds of chosen YouTube videos at will.",
             "img":"entryimg/bgmswitch.png",
             "github":"https://github.com/risonakamo/bgmswitcher",
+            "site":"https://risonakamo.github.io/bgmswitcher/",
             "imgtags":["website"]
         },
         {
