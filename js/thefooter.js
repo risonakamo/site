@@ -36,7 +36,7 @@ class TheFooter extends React.Component {
       className: "profile-img",
       ref: this.profileImg
     }, React.createElement("img", {
-      src: "img/me.jpg",
+      src: "img/me.png",
       ref: this.profileImgImg
     })), React.createElement("a", {
       href: "https://github.com/risonakamo/site"

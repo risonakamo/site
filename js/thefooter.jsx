@@ -35,7 +35,7 @@ class TheFooter extends React.Component
   {
     return (<>
       <p>Website made by: <a href="" onClick={this.expandProfile}>Me</a> of course. Who else?</p>
-      <div className="profile-img" ref={this.profileImg}><img src="img/me.jpg" ref={this.profileImgImg}/></div>
+      <div className="profile-img" ref={this.profileImg}><img src="img/me.png" ref={this.profileImgImg}/></div>
       <a href="https://github.com/risonakamo/site">This site's github</a>
     </>);
   }
