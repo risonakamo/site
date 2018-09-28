@@ -1,3 +1,4 @@
+//TheFooter()
 class TheFooter extends React.Component {
   constructor(props) {
     super(props);
@@ -6,7 +7,11 @@ class TheFooter extends React.Component {
     };
     this.profileImg = React.createRef();
     this.profileImgImg = React.createRef();
-  }
+  } //expands the image.
+  //i normally use an animation library but wanted to try
+  //basic animation api and didnt want to load in a library
+  //for this site, at least
+
 
   expandProfile(e) {
     e.preventDefault();
@@ -18,28 +23,38 @@ class TheFooter extends React.Component {
     this.setState({
       profileShown: 1
     });
-    var animationDuration = 500;
-    this.profileImg.current.animate([{
-      height: "0px",
-      opacity: 0
-    }, {
-      height: this.profileImgImg.current.scrollHeight + "px",
-      opacity: 1
-    }], {
-      duration: animationDuration,
-      fill: "forwards",
-      easing: "cubic-bezier(0.215, 0.61, 0.355, 1)" //easeoutcubic
 
-    });
-    var count = 0;
-    var scrollDown = setInterval(() => {
-      window.scrollTo(0, document.documentElement.scrollHeight);
-      count += 10;
+    try {
+      var animationDuration = 500;
+      this.profileImg.current.animate([{
+        height: "0px",
+        opacity: 0
+      }, {
+        height: `${this.profileImgImg.current.scrollHeight}px`,
+        opacity: 1
+      }], {
+        duration: animationDuration,
+        fill: "forwards",
+        easing: "cubic-bezier(0.215, 0.61, 0.355, 1)" //easeoutcubic
 
-      if (count == animationDuration) {
-        clearInterval(scrollDown);
-      }
-    }, 10);
+      });
+      var count = 0;
+      var scrollDown = setInterval(() => {
+        window.scrollTo(0, document.documentElement.scrollHeight);
+        count += 10;
+
+        if (count == animationDuration) {
+          clearInterval(scrollDown);
+        }
+      }, 10);
+    } //if animation api doesnt work (microsoft edge) :(
+    catch (err) {
+      this.profileImg.current.style.height = `${this.profileImgImg.current.scrollHeight}px`;
+      this.profileImg.current.style.opacity = 1;
+      setTimeout(() => {
+        window.scrollTo(0, document.documentElement.scrollHeight);
+      }, 1);
+    }
   }
 
   render() {
