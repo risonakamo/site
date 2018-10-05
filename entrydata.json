@@ -74,6 +74,13 @@
             "img":"entryimg/shuffle.png",
             "github":"https://github.com/risonakamo/bshuffle",
             "imgtags":["extension"]
+        },
+        {
+            "title":"Youtube Video Position Saver",
+            "description":"Chrome extension that allows bookmarking of youtube videos at their current time position, so they can be watched later.",
+            "img":"entryimg/ssaver.png",
+            "github":"https://github.com/risonakamo/ssaver",
+            "imgtags":["extension","react"]
         }
     ],
     [
