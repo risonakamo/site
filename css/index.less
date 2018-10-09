@@ -7,8 +7,8 @@
 @secondary-light-colour: #2b8ef3;
 @faded-p-colour: #757575;
 
-@small-screen: ~"max-width: 1230px"; //minimum screen size for mobile cutoff
-@smaller-screen: ~"max-width: 1000px"; //special extra smaller screen size
+@small-screen: ~"max-width: 1230px"; //first cutoff for smaller screen styles
+@smaller-screen: ~"max-width: 1175px"; //second cutoff for mobile styles
 
 body
 {
@@ -360,6 +360,11 @@ a
 
     @media (@small-screen)
     {
+        width: 950px;
+    }
+
+    @media (@smaller-screen)
+    {
         width: 100%;
     }
 }
@@ -374,7 +379,7 @@ a
     opacity: 0;
     animation: fade-slide-in 1s forwards;
 
-    @media (@small-screen)
+    @media (@smaller-screen)
     {
         display: block;
         width: 90%;
@@ -388,6 +393,11 @@ a
         margin-left: 120px;
 
         @media (@small-screen)
+        {
+            margin-left: 50px;
+        }
+
+        @media (@smaller-screen)
         {
             margin-left: auto;
         }
@@ -437,7 +447,7 @@ a
         border-radius: 3px;
         transition: background-color .2s;
 
-        @media (@small-screen)
+        @media (@smaller-screen)
         {
             font-size: 19px;
         }
