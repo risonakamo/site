@@ -2,14 +2,14 @@
     [
         {
             "title":"AzLTables",
-            "description":"Gather information from the Azur Lane wiki and view all collected information in one place, displayed in an easy-to-view format. Fleet management functions included.",
+            "description":"Gather information from the Azur Lane Wiki (Information Website for Mobile Game) and view all collected information in one place, displayed in an easy-to-view format. Fleet management functions included.",
             "img":"entryimg/azltable.png",
             "github":"https://github.com/risonakamo/azltables",
             "imgtags":["extension"]
         },
         {
             "title":"AzLEList",
-            "description":"A site for organising Azur Lane Equipment data. Perform sorts and mark your own equipment for faster reference and comparison.",
+            "description":"A site for organising Azur Lane (Mobile Game) Equipment data. Perform sorts and mark your own equipment for faster reference and comparison.",
             "img":"entryimg/azlelist.png",
             "github":"https://github.com/risonakamo/azlelist",
             "site":"https://risonakamo.github.io/azlelist/",
@@ -17,14 +17,14 @@
         },
         {
             "title":"ABDUCTION",
-            "description":"2d side-scrolling danmaku game made for the UMBC games development class. Pick up people and drop them, and don't get hit.",
+            "description":"2d side-scrolling danmaku (bullet-dodging) game made for the UMBC games development class. \"Pick up people and drop them, and don't get hit.\"",
             "img":"entryimg/alien.png",
             "github":"private",
             "imgtags":["unity","csharp"]
         },
         {
             "title":"Ellephant",
-            "description":"A Kantai Collection viewer with a focus on providing only the most relevant information and look good while doing it.",
+            "description":"A Kantai Collection (Browser Game) viewer with a focus on providing only the most relevant information and look good while doing it.",
             "img":"entryimg/ellephant.png",
             "github":"https://github.com/risonakamo/ellephant",
             "imgtags":["electron","polymer"]
@@ -40,7 +40,7 @@
     [
         {
             "title":"IgAViewer",
-            "description":"Website for advanced viewing of an Imgur Album.",
+            "description":"Website for advanced viewing of an Imgur (image-hosting website) Album.",
             "img":"entryimg/iga.png",
             "github":"https://github.com/risonakamo/igaviewer",
             "imgtags":["website","polymer"]
@@ -55,7 +55,7 @@
         },
         {
             "title":"Distractlands",
-            "description":"UMBC software engineering political districting project. Uses Google Maps API to colour Maryland pretty colours, and is very Red. I don't know what political districting is, I just made the front-end.",
+            "description":"UMBC software engineering political districting project. Uses Google Maps API to colour Maryland pretty colours, and is very Red.",
             "img":"entryimg/distract.png",
             "github":"https://github.com/jndinh/frontend-districtlands",
             "imgtags":["website"]
@@ -70,14 +70,14 @@
         },
         {
             "title":"BShuffle",
-            "description":"Chrome extension that compensates for the Bandcamp web service's overwhelming lack of a shuffle button.",
+            "description":"Chrome extension that compensates for the Bandcamp (Online Music Album Distribution Platform) web service's overwhelming lack of a shuffle button.",
             "img":"entryimg/shuffle.png",
             "github":"https://github.com/risonakamo/bshuffle",
             "imgtags":["extension"]
         },
         {
             "title":"Youtube Video Position Saver",
-            "description":"Chrome extension that allows bookmarking of youtube videos at their current time position, so they can be watched later.",
+            "description":"Chrome extension that allows bookmarking of YouTube videos at their current time position, so they can be watched later.",
             "img":"entryimg/ssaver.png",
             "github":"https://github.com/risonakamo/ssaver",
             "imgtags":["extension","react"]
@@ -86,14 +86,14 @@
     [
         {
             "title":"expandimgur",
-            "description":"Revamp Imgur's user image pages by increasing support for wider screens in addition to other small modifications.",
+            "description":"Revamp Imgur (image-hosting website) user image pages by increasing support for wider screens in addition to other small modifications.",
             "img":"entryimg/expand.png",
             "github":"https://github.com/risonakamo/expandimgur",
             "imgtags":["extension"]
         },
         {
             "title":"steamtiles",
-            "description":"Designed to enhance the Steam store browsing experience by showing each games' header image.",
+            "description":"Designed to enhance the Steam (Dnline Game Digital Distribution Platform) store browsing experience by showing each games' header image.",
             "img":"entryimg/steamtile.png",
             "github":"https://github.com/risonakamo/steamtiles",
             "imgtags":["extension"]
@@ -123,7 +123,7 @@
         },
         {
             "title":"fcardsK",
-            "description":"Mobile website for Kanji practise with a unique system while looking like a rainbow.",
+            "description":"Mobile website for Kanji practise with a unique visual system.",
             "img":"entryimg/fcardsk.png",
             "github":"https://github.com/risonakamo/fcardsk",
             "imgtags":["website","polymer"]
