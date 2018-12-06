@@ -2,14 +2,14 @@
     [
         {
             "title":"AzLTables",
-            "description":"Gather information from the Azur Lane Wiki (Information Website for Mobile Game) and view all collected information in one place, displayed in an easy-to-view format. Fleet management functions included.",
+            "description":"Gather information from the Azur Lane Wiki (Information Website for Mobile Game) and view all collected information in one place, displayed in an easy-to-view format. Management functions included.",
             "img":"entryimg/azltable.png",
             "github":"https://github.com/risonakamo/azltables",
             "imgtags":["extension"]
         },
         {
             "title":"AzLEList",
-            "description":"A site for organising Azur Lane (Mobile Game) Equipment data. Perform sorts and mark your own equipment for faster reference and comparison.",
+            "description":"A site for organising Azur Lane (Mobile Game) Equipment data. Perform sorts and mark equipment entries for faster reference and comparison.",
             "img":"entryimg/azlelist.png",
             "github":"https://github.com/risonakamo/azlelist",
             "site":"https://risonakamo.github.io/azlelist/",
