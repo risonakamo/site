@@ -94,7 +94,7 @@
         {
             "title":"steamtiles",
             "description":"Designed to enhance the Steam (Online Game Digital Distribution Platform) store browsing experience by showing each games' header image.",
-            "img":"entryimg/steamtile.png",
+            "img":"entryimg/steamtile2.png",
             "github":"https://github.com/risonakamo/steamtiles",
             "imgtags":["extension"]
         },
