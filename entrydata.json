@@ -17,7 +17,7 @@
         },
         {
             "title":"ABDUCTION",
-            "description":"2d side-scrolling danmaku (bullet-dodging) game made for the UMBC games development class. \"Pick up people and drop them, and don't get hit.\"",
+            "description":"2d side-scrolling danmaku (bullet-dodging) game made for the UMBC games development class. <i>\"Pick up people and drop them, and don't get hit.\"</i>",
             "img":"entryimg/alien.png",
             "github":"private",
             "imgtags":["unity","csharp"]
@@ -93,7 +93,7 @@
         },
         {
             "title":"steamtiles",
-            "description":"Designed to enhance the Steam (Dnline Game Digital Distribution Platform) store browsing experience by showing each games' header image.",
+            "description":"Designed to enhance the Steam (Online Game Digital Distribution Platform) store browsing experience by showing each games' header image.",
             "img":"entryimg/steamtile.png",
             "github":"https://github.com/risonakamo/steamtiles",
             "imgtags":["extension"]

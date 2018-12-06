@@ -61,7 +61,11 @@ class Entry extends React.Component {
         key: i,
         title: x
       });
-    }))), React.createElement("p", null, this.props.data.description), React.createElement("a", {
+    }))), React.createElement("p", {
+      dangerouslySetInnerHTML: {
+        __html: this.props.data.description
+      }
+    }), React.createElement("a", {
       className: githubData.class,
       href: githubData.href
     }, githubData.text[githubData.textIndex]), (() => {

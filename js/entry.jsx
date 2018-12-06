@@ -67,7 +67,7 @@ class Entry extends React.Component
             })}
           </span>
         </h2>
-        <p>{this.props.data.description}</p>
+        <p dangerouslySetInnerHTML={{__html:this.props.data.description}}></p>
         <a className={githubData.class} href={githubData.href}>{githubData.text[githubData.textIndex]}</a>
         {(()=>{
           //if there is a site link
