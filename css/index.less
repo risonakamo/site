@@ -633,3 +633,29 @@ footer
         }
     }
 }
+
+//blue focus span
+.blue-focus
+{
+    animation: blueFocus 13s ease-in;
+}
+
+//animation for bluefocus
+@keyframes blueFocus
+{
+    0%
+    {
+        background-color: inherit;
+    }
+
+    5%
+    {
+        background-color: @secondary-light-colour;
+        // background-color: @main-light-strong;
+    }
+
+    100%
+    {
+        background-color: inherit;
+    }
+}

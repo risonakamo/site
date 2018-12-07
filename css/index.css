@@ -449,3 +449,17 @@ footer .profile-img {
 footer .profile-img img {
   width: 300px;
 }
+.blue-focus {
+  animation: blueFocus 13s ease-in;
+}
+@keyframes blueFocus {
+  0% {
+    background-color: inherit;
+  }
+  5% {
+    background-color: #2b8ef3;
+  }
+  100% {
+    background-color: inherit;
+  }
+}
