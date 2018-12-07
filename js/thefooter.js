@@ -64,10 +64,10 @@ class TheFooter extends React.Component {
       sharkButtonClass = "sharkbutton clicked";
     }
 
-    return React.createElement(React.Fragment, null, React.createElement("p", null, "Website made by: ", React.createElement("span", {
+    return React.createElement(React.Fragment, null, React.createElement("p", null, "Website made by ", React.createElement("span", {
       className: sharkButtonClass,
       onClick: this.expandProfile
-    }, "Me"), " of course. Who else?"), React.createElement("div", {
+    }, "Khang"), " of course"), React.createElement("div", {
       className: "profile-img",
       ref: this.profileImg
     }, React.createElement("img", {

@@ -76,7 +76,7 @@ class TheFooter extends React.Component
     }
 
     return (<>
-      <p>Website made by: <span className={sharkButtonClass} onClick={this.expandProfile}>Me</span> of course. Who else?</p>
+      <p>Website made by <span className={sharkButtonClass} onClick={this.expandProfile}>Khang</span> of course</p>
       <div className="profile-img" ref={this.profileImg}><img src="img/me.png" ref={this.profileImgImg}/></div>
       <a href="https://github.com/risonakamo/site">This site's github</a>
     </>);
