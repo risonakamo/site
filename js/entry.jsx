@@ -30,8 +30,9 @@ class EntryTop extends React.Component
     title
     description
     github: give string "private" to denote private unavailable github
-    site?
     imgtags: array of type tags that correspond to images in tagicons dir
+    site?: optional link to directly navigate the site if the entry is for a site
+    powerpoint?: optional link for powerpoint
   }*/
 class Entry extends React.Component
 {
@@ -70,11 +71,23 @@ class Entry extends React.Component
         <p dangerouslySetInnerHTML={{__html:this.props.data.description}}></p>
         <a className={githubData.class} href={githubData.href}>{githubData.text[githubData.textIndex]}</a>
         {(()=>{
+          var additionalLinks=[];
+
           //if there is a site link
           if (this.props.data.site)
           {
-            return <a className="sitelink" href={this.props.data.site}>visit this site</a>;
+            additionalLinks.push(<a className="sitelink"
+              href={this.props.data.site} key="additional1">visit this site</a>);
           }
+
+          //if there is a powerpoint link
+          if (this.props.data.powerpoint)
+          {
+            additionalLinks.push(<a className="sitelink" href={this.props.data.powerpoint}
+              key="additional2">google drive presentation</a>);
+          }
+
+          return additionalLinks;
         })()}
       </div>
     );

@@ -66,7 +66,7 @@
     [
         {
             "title":"IgAViewer",
-            "description":"Website for advanced viewing of an Imgur (image-hosting website) Album.",
+            "description":"Minimal website for advanced viewing of Imgur (image-hosting website) Albums with extra useful functionalities.",
             "img":"entryimg/iga.png",
             "github":"https://github.com/risonakamo/igaviewer",
             "imgtags":["website","polymer"]
