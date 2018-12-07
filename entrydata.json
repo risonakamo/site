@@ -1,11 +1,12 @@
 [
     [
         {
-            "title":"AzLTables",
-            "description":"Gather information from the Azur Lane Wiki (Information Website for Mobile Game) and view all collected information in one place, displayed in an easy-to-view format. Management functions included.",
-            "img":"entryimg/azltable.png",
-            "github":"https://github.com/risonakamo/azltables",
-            "imgtags":["extension"]
+            "title":"Distractlands",
+            "description":"UMBC software engineering political districting project. Uses Google Maps API to colour Maryland pretty colours, and is very Red.",
+            "img":"entryimg/distract.png",
+            "github":"https://github.com/jndinh/frontend-districtlands",
+            "powerpoint":"https://docs.google.com/presentation/d/1XDi2ZM8iJFOk1dIMbY9EC866OMnAtH8VVwu4TE2-9Sk/edit?usp=sharing",
+            "imgtags":["website"]
         },
         {
             "title":"AzLEList",
@@ -20,7 +21,24 @@
             "description":"2d side-scrolling danmaku (bullet-dodging) game made for the UMBC games development class. <i>\"Pick up people and drop them, and don't get hit.\"</i>",
             "img":"entryimg/alien.png",
             "github":"private",
+            "powerpoint":"https://drive.google.com/open?id=1GUMULw8NziTZ75phiCR7xwJ5RuJyBO-Hd-9RJ8w-0Ms",
             "imgtags":["unity","csharp"]
+        },
+        {
+            "title":"Anitrack",
+            "description":"Chrome extension integrating with online service Anilist to enhance and provide additional features.",
+            "img":"entryimg/anitrack.png",
+            "github":"https://github.com/risonakamo/anitrack",
+            "imgtags":["extension","graphql"]
+        }
+    ],
+    [
+        {
+            "title":"Youtube Video Position Saver",
+            "description":"Chrome extension that allows bookmarking of YouTube videos at their current time position, so they can be watched later.",
+            "img":"entryimg/ssaver.png",
+            "github":"https://github.com/risonakamo/ssaver",
+            "imgtags":["extension","react"]
         },
         {
             "title":"Ellephant",
@@ -30,11 +48,19 @@
             "imgtags":["electron","polymer"]
         },
         {
-            "title":"Anitrack",
-            "description":"Chrome extension integrating with online service Anilist to enhance and provide additional features.",
-            "img":"entryimg/anitrack.png",
-            "github":"https://github.com/risonakamo/anitrack",
-            "imgtags":["extension","graphql"]
+            "title":"AzLTables",
+            "description":"Gather information from the Azur Lane Wiki (Information Website for Mobile Game) and view all collected information in one place, displayed in an easy-to-view format. Management functions included.",
+            "img":"entryimg/azltable.png",
+            "github":"https://github.com/risonakamo/azltables",
+            "imgtags":["extension"]
+        },
+        {
+            "title":"Falling Snow & Water",
+            "description":"A pixel-themed particle system.",
+            "img":"entryimg/fall.png",
+            "github":"https://github.com/risonakamo/fallsystem",
+            "site":"https://risonakamo.github.io/fallsystem/",
+            "imgtags":["website","react"]
         }
     ],
     [
@@ -54,13 +80,6 @@
             "imgtags":["website","graphql"]
         },
         {
-            "title":"Distractlands",
-            "description":"UMBC software engineering political districting project. Uses Google Maps API to colour Maryland pretty colours, and is very Red.",
-            "img":"entryimg/distract.png",
-            "github":"https://github.com/jndinh/frontend-districtlands",
-            "imgtags":["website"]
-        },
-        {
             "title":"Choose",
             "description":"Makes a choice.",
             "img":"entryimg/choose.png",
@@ -74,13 +93,6 @@
             "img":"entryimg/shuffle.png",
             "github":"https://github.com/risonakamo/bshuffle",
             "imgtags":["extension"]
-        },
-        {
-            "title":"Youtube Video Position Saver",
-            "description":"Chrome extension that allows bookmarking of YouTube videos at their current time position, so they can be watched later.",
-            "img":"entryimg/ssaver.png",
-            "github":"https://github.com/risonakamo/ssaver",
-            "imgtags":["extension","react"]
         }
     ],
     [
@@ -127,14 +139,6 @@
             "img":"entryimg/fcardsk.png",
             "github":"https://github.com/risonakamo/fcardsk",
             "imgtags":["website","polymer"]
-        },
-        {
-            "title":"Falling Snow & Water",
-            "description":"A pixel-themed particle system.",
-            "img":"entryimg/fall.png",
-            "github":"https://github.com/risonakamo/fallsystem",
-            "site":"https://risonakamo.github.io/fallsystem/",
-            "imgtags":["website","react"]
         }
     ]
 ]
