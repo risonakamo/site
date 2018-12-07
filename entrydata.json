@@ -18,7 +18,7 @@
         },
         {
             "title":"ABDUCTION",
-            "description":"2d side-scrolling danmaku (bullet-dodging) game made for the UMBC games development class.</br><i>\"Pick up people and drop them, and don't get hit.\"</i>",
+            "description":"2d side-scrolling danmaku (bullet-dodging) game made for the UMBC games development class.<br><i>\"Abduct people and avoid threats. In a pinch, use humans as ammo.\"</i>",
             "img":"entryimg/alien.png",
             "github":"private",
             "powerpoint":"https://drive.google.com/open?id=1GUMULw8NziTZ75phiCR7xwJ5RuJyBO-Hd-9RJ8w-0Ms",
@@ -49,7 +49,7 @@
         },
         {
             "title":"AzLTables",
-            "description":"Gather information from the Azur Lane Wiki (Information Website for Mobile Game) and view all collected information in one place, displayed in an easy-to-view format. Management functions included.",
+            "description":"Gather data from the Azur Lane Wiki (Information Website for Mobile Game) and view all collected information in one place, displayed in an easy-to-view format. Management functions included.",
             "img":"entryimg/azltable.png",
             "github":"https://github.com/risonakamo/azltables",
             "imgtags":["extension"]
