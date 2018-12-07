@@ -74,7 +74,6 @@ class Entry extends React.Component {
 
       if (this.props.data.site) {
         additionalLinks.push(React.createElement("a", {
-          className: "sitelink",
           href: this.props.data.site,
           key: "additional1"
         }, "visit this site"));
@@ -83,7 +82,6 @@ class Entry extends React.Component {
 
       if (this.props.data.powerpoint) {
         additionalLinks.push(React.createElement("a", {
-          className: "sitelink",
           href: this.props.data.powerpoint,
           key: "additional2"
         }, "google drive presentation"));

@@ -76,15 +76,13 @@ class Entry extends React.Component
           //if there is a site link
           if (this.props.data.site)
           {
-            additionalLinks.push(<a className="sitelink"
-              href={this.props.data.site} key="additional1">visit this site</a>);
+            additionalLinks.push(<a href={this.props.data.site} key="additional1">visit this site</a>);
           }
 
           //if there is a powerpoint link
           if (this.props.data.powerpoint)
           {
-            additionalLinks.push(<a className="sitelink" href={this.props.data.powerpoint}
-              key="additional2">google drive presentation</a>);
+            additionalLinks.push(<a href={this.props.data.powerpoint} key="additional2">google drive presentation</a>);
           }
 
           return additionalLinks;
