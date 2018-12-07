@@ -432,6 +432,9 @@ footer a {
   line-height: 1.75;
   color: #6ed59a;
 }
+footer .type-imgs img {
+  padding: 0 3px 0 3px;
+}
 footer .sharkbutton {
   color: #2b8ef3;
   cursor: pointer;

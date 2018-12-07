@@ -73,6 +73,14 @@ class TheFooter extends React.Component {
     }, React.createElement("img", {
       src: "img/me.png",
       ref: this.profileImgImg
+    })), React.createElement("div", {
+      className: "type-imgs"
+    }, React.createElement("img", {
+      src: "tagicons/website_white.png",
+      title: "website"
+    }), React.createElement("img", {
+      src: "tagicons/react_white.png",
+      title: "react"
     })), React.createElement("a", {
       href: "https://github.com/risonakamo/site"
     }, "This site's github"));
