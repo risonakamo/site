@@ -72,11 +72,11 @@
             "imgtags":["website","polymer"]
         },
         {
-            "title":"Anigen",
-            "description":"Website for production of graphical Television Program Charts based on data from a user's Anilist account for any particular year and season.",
+            "title":"Anigen3",
+            "description":"Website for viewing and generating graphical seasonal charts for Anilist.co user lists.",
             "img":"entryimg/anigen.png",
-            "github":"https://github.com/risonakamo/anigen",
-            "site":"https://risonakamo.github.io/anigen/",
+            "github":"https://github.com/risonakamo/anigen3",
+            "site":"https://risonakamo.github.io/anigen/3",
             "imgtags":["website","graphql"]
         },
         {
