@@ -72,7 +72,7 @@
             "imgtags":["website","polymer"]
         },
         {
-            "title":"Anigen3",
+            "title":"Anigen",
             "description":"Website for viewing and generating graphical seasonal charts for Anilist.co user lists.",
             "img":"entryimg/anigen.png",
             "github":"https://github.com/risonakamo/anigen3",
